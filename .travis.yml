@@ -1,2 +1,10 @@
 language: csharp
-solution: Try.Lazy.sln
+dist: trusty
+mono: none
+dotnet: 2.0.4
+
+install:
+- dotnet restore
+
+script:
+- dotnet build
