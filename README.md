@@ -16,3 +16,5 @@ Plus it will make its initializer thread safe and will avoid CLR side effect des
 The third aspect demonstrated by using LazyThreadSafetyMode.PublicationOnly parameter in CarRepository implementation.
 It says to re-create an instance again in case if on the other thread throws an exception during value initialization.
 Lazy<T> value initializer throws an exception when it was called from a background thread. But it repeats initialization on the main thread.
+
+[![Build Status](https://travis-ci.org/nikaburu/try-lazy-dotnet.svg?branch=master)](https://travis-ci.org/nikaburu/try-lazy-dotnet)
