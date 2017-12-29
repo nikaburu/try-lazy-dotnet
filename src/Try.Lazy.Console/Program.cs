@@ -1,10 +1,13 @@
-﻿namespace Try.Lazy.Console
+﻿using Try.Lazy.Dal;
+
+namespace Try.Lazy.Console
 {
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            System.Console.WriteLine("Hello World!");
-        }
-    }
+	internal class Program
+	{
+		private static void Main()
+		{
+			var app = new Application(CarRepository.Instance);
+			app.Run();
+		}
+	}
 }
