@@ -24,7 +24,7 @@ namespace Try.Lazy.Dal
 					throw new Exception("Value is called from another thread!");
 
 				return _database.Cars.FirstOrDefault(car => car.CarId == carId);
-			}, LazyThreadSafetyMode.PublicationOnly); // LazyThreadSafetyMode.PublicationOnly - says do not cache exception from another thread.
+			}, LazyThreadSafetyMode.PublicationOnly); // LazyThreadSafetyMode.PublicationOnly says not to cache exception from another thread.
 		}
 
 		#region Fields

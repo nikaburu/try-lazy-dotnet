@@ -11,9 +11,7 @@ namespace Try.Lazy.Dal
 		{
 			get
 			{
-				//Emulate long lime request
 				Thread.Sleep(1500);
-
 				return _cars;
 			}
 		}
@@ -30,9 +28,7 @@ namespace Try.Lazy.Dal
 					Owner = "Iva Grue",
 					Brand = new Lazy<Brand>(() =>
 					{
-						//Emulate long lime request
 						Thread.Sleep(1500);
-
 						return new Brand
 						{
 							Name = "BMV",
@@ -49,9 +45,7 @@ namespace Try.Lazy.Dal
 					Owner = "Sean O'Connel",
 					Brand = new Lazy<Brand>(() =>
 					{
-						//Emulate long lime request
 						Thread.Sleep(1500);
-
 						return new Brand
 						{
 							Name = "Toyota",
